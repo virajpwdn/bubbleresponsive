@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: roboto;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
+}
+
+.container {
+  height: 45em;
+  width: 35em;
+  background-color: #0b132b;
+  border-radius: 5px;
+  padding: 1.5em 1.5em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+/* Top */
+.container .top {
+  height: 8em;
+  width: 99%;
+  background-color: #00b4d8;
+  color: white;
+  padding: 1.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+.container .t-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+}
+
+.container .t-top .time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.container .top .t-top .time h4 {
+  font-size: 1.1em;
+}
+
+.container .top .t-top .time .time-box {
+  height: 2.5em;
+  width: 3.5em;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .top .t-top .time .time-box p{
+  font-size: 1.3em;
+  font-weight: 800;
+  color: black;
+}
+
+.container .top .t-top .score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.container .top .t-top .score .score-box {
+  height: 2.5em;
+  width: 3.5em;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .top .t-top .score .score-box p{
+  font-size: 1.3em;
+  font-weight: 800;
+  color: black;
+}
+
+.container .top .t-top .score h4 {
+  font-size: 1.1em;
+}
+
+.container .t-bottom .target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-left: -1.2em;
+}
+.container .t-bottom .target .target-box {
+  height: 2.5em;
+  width: 3.5em;
+  background-color: #ef233c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .t-bottom .target .target-box p {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.container .t-bottom .target h4 {
+  font-size: 1.1em;
+}
+
+/* Bottom */
+.container .bottom {
+  display: none;
+}
+.container .bottom-desktop {
+  display: block;
+  background-color: #ef233c;
+  height: 100%;
+  width: 99%;
+  border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffc300;
+  padding: 1em;
+  padding-left: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  flex-wrap: wrap;
+}
+.bottom-desktop .circle {
+  background-color: green;
+  height: 3.5em;
+  width: 3.5em;
+  border-radius: 50%;
+  /* align-self: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-desktop .circle p {
+  font-size: 1.3em;
+  font-weight: 800;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 21em;
+    height: 36em;
+  }
+
+  .container .bottom-desktop {
+    display: none;
+  }
+
+  .container .bottom {
+    height: 100%;
+    width: 99%;
+    border-radius: 5px;
+    background-color: #ffc300;
+    padding: 1em;
+
+    display: flex;
+    gap: 0.6em;
+    flex-wrap: wrap;
+  }
+
+  .bottom .circle {
+    background-color: green;
+    height: 3.4em;
+    width: 3.4em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom .circle p {
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+}
